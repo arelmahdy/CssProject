@@ -1,0 +1,127 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right,blue,indigo);
+height: 1100px;
+  
+}
+#header{
+  position: relative;  
+  
+}
+#header nav{
+    height:100px;
+  
+    
+}
+#btnContact{
+position:absolute;
+right: 10px;
+top: 0;
+}
+#MainButtons{
+    position:absolute;
+    right: 200px;
+    bottom: 0;
+    
+}
+#nav2{
+width: 100%;
+background: url('img/2jpg.jpg');
+position: relative;
+}
+#nav2 a{
+    text-decoration: none;
+    color: white;
+    position: sticky;
+    left: 250px;
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: -10px;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+
+#main{
+    float: left;
+    width:60%;
+    padding: 2px;
+    margin: 5px;
+    color: white;
+    font-size: 20px;
+    border-right: 1px solid black;
+ 
+}
+  
+
+#SideBar{
+    
+    float: right;
+    width: 30%;
+    padding: 2px;
+    margin: 5px;
+    color: white;
+    font-size: 20px;
+   
+
+}
+#footer{
+    clear: both;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+}
+
+#nav3{
+    display: none;
+}
+@media screen and (max-width:588px){
+    #nav2 a{
+        display: none;
+    }
+}
+@media  screen and  (max-width:758px) {
+       #MainButtons button {
+        display: none;
+    }
+    #nav3{
+        display: flex;
+    }
+    .pos-f-t button {
+display: block;
+    }
+    #nav1{
+        display: none;
+    }
+
+} 
+.card{
+    width: 25%;
+    float: left;
+    padding: 10px;
+    margin: 15px;
+    position: relative;
+
+}
+#cards{
+    clear: both;
+    width: 100%;
+    margin: auto;
+    height: auto;
+    display: flex;
+    float: left;
+    justify-content: center;
+}
+@media screen and (max-width:1500px){
+    #cards{
+        display: block;
+    }
+}
+@media screen and (max-width:800px){
+ 
+    .card{
+        width: auto;
+    }
+}
+
